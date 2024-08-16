@@ -2,8 +2,8 @@ package module_8;
 
 public class oInterface {
     public static void main(String[] args) {
-        Dog dog = new Dog("Dog", "Tommy");
-        Cat cat = new Cat("Cat", "Pussy");
+        Dogs dog = new Dogs("Dog", "Tommy");
+        Cats cat = new Cats("Cat", "Pussy");
 
         System.out.println(dog.voice());
         System.out.println(cat.voice());
@@ -22,11 +22,11 @@ interface Animal2{
     
 }
 
-class Dog implements Animal, Animal2{
+class Dogs implements Animal, Animal2{
     String category;
     String name;
 
-    public Dog(String category, String name){
+    public Dogs(String category, String name){
         this.category = category;
         this.name = name;
     }
@@ -37,11 +37,11 @@ class Dog implements Animal, Animal2{
     }
 }
 
-class Cat implements Animal{
+class Cats implements Animal{
     String category;
     String name;
     
-    public Cat(String category, String name){
+    public Cats(String category, String name){
         this.category = category;
         this.name = name;
     }

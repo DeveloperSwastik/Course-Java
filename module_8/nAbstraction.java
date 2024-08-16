@@ -10,11 +10,11 @@ public class nAbstraction {
     }
 }
 
-abstract class Animal{
+abstract class Animals{
     String category;
     String name;
 
-    public Animal(String category, String name){
+    public Animals(String category, String name){
         this.category = category;
         this.name = name;
     }
@@ -22,7 +22,7 @@ abstract class Animal{
     abstract String voice();
 }
 
-class Dog extends Animal{
+class Dog extends Animals{
     public Dog(String name){
         super("Dog", name);
     }
@@ -33,7 +33,7 @@ class Dog extends Animal{
     }
 }
 
-class Cat extends Animal{
+class Cat extends Animals{
     public Cat(String name){
         super("Cat", name);
     }

@@ -6,12 +6,13 @@ public class aThreading {
         SecondThread t2 = new SecondThread();
         t1.start();
         t2.start();
+
     }
 }
 
-class FirstThread extends Thread{
+class FirstThread extends Thread {
     @Override
-    public void run(){
+    public void run() {
         int i = 100;
         while (i > 0) {
             System.out.println("First Thread");
@@ -20,9 +21,9 @@ class FirstThread extends Thread{
     }
 }
 
-class SecondThread extends Thread{
+class SecondThread extends Thread {
     @Override
-    public void run(){
+    public void run() {
         int i = 100;
         while (i > 0) {
             System.out.println("Second Thread");
